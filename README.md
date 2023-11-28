@@ -10,12 +10,6 @@ DesarrolloAppsWeb
 ![Isaac dancing](https://media.tenor.com/WbX67_BJxDQAAAAC/the-binding-of-isaac-tboi.gif)
 
                                                                                                                                                                                                                                           Si lees esto me debes una cena
->──────▄▌▐▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▌
->───▄▄██▌█ BEEP BEEP
->▄▄▄▌▐██▌█ -15 LP DELIVERY
->███████▌█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▌
->▀(⊙)▀▀▀▀▀▀▀(⊙)(⊙)▀▀▀▀▀▀▀▀▀▀(⊙)▀▀
-
 
 
  
