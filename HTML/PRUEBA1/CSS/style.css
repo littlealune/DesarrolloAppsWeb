@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    height:100%;
+}
+
+nav {
+    background-color: black;
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+}
+footer{
+    background-color: black;
+    position:relative;
+    bottom:0;
+    width:100%;
+    margin-bottom: 0;
+}
+
+footer nav li {
+    padding: auto;
+    margin: 0 auto;
+}
+
+footer nav {
+    margin: 0;
+}
+
+nav p {
+    padding-top: 30px;
+}
+
+h1,
+h2 {
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    margin: auto;
+    width: 70%;
+}
+
+table {
+    border: 1px solid black;
+    text-align: center;
+    width: 90%;
+}
+
+th {
+    color: white;
+    background-color: black;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.form-control {
+    display: block;
+    width: 90%;
+    border-radius: 5px;
+    ;
+    padding: 5px;
+}
+
+textarea {
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+button {
+    border-radius: 5px;
+    padding: 8px;
+    margin-right: 10px;
+    border-color: lightgray;
+    box-shadow: -2px -2px white inset, 2px 2px white inset, -2px 2px white inset, 2px -2px white inset;
+}
+
+button[type="submit"] {
+    background-color: green;
+    color: white;
+}
+
+button[type="reset"] {
+    background-color: RED;
+    color: white;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Compra de billetes de tren</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <h1>
+        Compra de billetes de tren
+    </h1>
+    <form action="/billete" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>
+                Datos del cliente
+            </legend>
+            <label for="nombre" class="form-label">Nombre y apellidos</label>
+            <input type="text" name="nombre" id="nombre" class="form-control" title="Introduzca su nombre" tabindex="1"
+                maxlength="50" required>
+            <br>
+            <label for="email" class="form-label">Email</label>
+            <input type="text" name="email" id="email" class="form-control" title="Introduzca su email" tabindex="2"
+                maxlength="50" required>
+            <br>
+            <label for="telefono" class="form-label">Teléfono móvil:</label>
+            <input type="tel" name="telefono" id="telefono" class="form-control" title="Introduzca su email" required>
+            <br>
+            <label for="dni" class="form-label">DNI:</label>
+            <input type="file" name="dni" id="dni" class="form-control" required>
+        </fieldset>
+        <fieldset>
+            <legend>Datos del viaje</legend>
+            <label for="fechaViaje">Fecha del viaje:</label>
+            <br>
+            <input type="date" id="fechaViaje" name="fechaViaje">
+            <br>
+            <label for="horaViaje">Hora del viaje:</label>
+            <br>
+            <select name="horaViaje" id="horaViaje" size="3" required>
+                <option value="17_00">17:00h</option>
+                <option value="21_00">21:00h</option>
+                <option value="23_30">23:30h</option>
+            </select>
+            <br>
+            <label for="categoria">Categoría:</label>
+            <br>
+            <select name="categoria" id="categoria" required>
+                <option> -- Categoría -- </option>
+                <option value="premium">Premium</option>
+                <option value="primera">Primera</option>
+                <option value="turista">Turista</option>
+            </select>
+            <br>
+            <label for="salida">Ciudad de salida:</label>
+            <br>
+            <select name="salida" id="salida" required>
+                <option> -- Salida -- </option>
+                <option value="zaragoza">Zaragoza</option>
+                <option value="valencia">Valencia</option>
+                <option value="madrid">Madrid</option>
+            </select>
+            <br>
+            <label for="llegada">Ciudad de destino:</label>
+            <br>
+            <select name="llegada" id="llegada" required>
+                <option> -- Destino -- </option>
+                <option value="zaragoza">Zaragoza</option>
+                <option value="valencia">Valencia</option>
+                <option value="madrid">Madrid</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de pago:</legend>
+            <input type="radio" name="tipoTarjeta" value="visa" id="visa" class="form-control-radio" checked>
+            <label for="visa">VISA</label>
+            <input type="radio" name="tipoTarjeta" value="mastercard" id="mastercard" class="form-control-radio">
+            <label for="mastercard">Mastercard</label>
+            <br>
+            <label for="nombreTarjeta">Nombre de la tarjeta:</label>
+            <br>
+            <input type="text" id="numeroTarjeta" name="numeroTarjeta" maxlength="16" required>
+            <br>
+            <label for="numeroTarjeta">Número de tarjeta:</label>
+            <br>
+            <input type="text" id="numeroTarjeta" name="numeroTarjeta" maxlength="16" required>
+            <br>
+            <label for="fechaCaducidad">Fecha de caducidad: </label>
+            <input type="text" id="fechaCaducidad" name="fechaCaducidad" placeholder="mm/yy" required>
+            <label for="CVV"> CVV: </label>
+            <input type="text" id="CVV" name="CVV" placeholder="XXX" maxlength="3" required>
+            <br>
+            <input type="checkbox" name="tarjetaRenfe" id="tarjetaRenfe">
+            <label for="tarjetaRenfe">Tiene tarjeta Renfe</label>
+            <br>
+            <input type="radio" name="tipoCliente" value="jubilado" id="jubilado" class="form-control-radio">
+            <label for="jubilado">Jubilado</label>
+            <input type="radio" name="tipoCliente" value="desempleado" id="desempleado" class="form-control-radio">
+            <label for="desempleado">Desempleado</label>
+            <input type="radio" name="tipoCliente" value="estudiante" id="estudiante" class="form-control-radio">
+            <label for="estudiante">Estudiante</label>
+            <input type="radio" name="tipoCliente" value="ninguna" id="ninguna" class="form-control-radio" checked>
+            <label for="ninguna">Ninguna de las anteriores</label>
+        </fieldset>
+        <input type="checkbox" name="lopd" id="lopd" class="form-control-check" required>
+        <label for="lopd" class="form-check-label">
+            Estoy de acuerdo con la
+            <a href="politica-privacidad.html" target="_blank">Política de Privacidad</a>.
+        </label>
+        <br>
+        <button type="reset">RESET</button>
+        <button type="submit">ENVIAR</button>
+    </form>
+</body>
+
+</html>

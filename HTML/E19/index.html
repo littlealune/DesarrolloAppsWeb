@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <!-- Cargamos CSS de forma remota -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            MiPinga- Digo Mi Página
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="//github.io/jo_geek" target="_blank">Github</a>
+          <a href="http://stackoverflow.com/users/4084003/" target="_blank">Stackoverflow</a>
+          <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">LinkedIn</a>
+          <a href="https://codepen.io/jo_Geek/" target="_blank">Codepen</a>
+          <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">JsFiddle</a>
+        </div>
+      </div>
+    <section class="home-slider">
+        <!-- Incluyo el componente carousel -->
+        <div id="sliderHome" class="carousel slide">
+            <div class="carousel-inner"><!-- Aquí van las imagenes/diapositivas-->
+              <div class="carousel-item active">
+                <!-- Imagen de fondo -->
+                <picture><!-- Utilizamos HTML5 pra incluir una imagen -->
+                    <!-- Utilizamos una media para cargar una imagen para escritorio -->
+                    <source srcset="https://dummyimage.com/1920x1200/000/fff" media="(min-width: 1200px)" class="img-fluid">
+                    <source srcset="https://dummyimage.com/1200x800/000/fff" media="(min-width: 768px)" class="img-fluid">
+                    <!-- la imagen por defecto para movil-->
+                    <img src="https://dummyimage.com/768x480/000/fff" alt="" class="img-fluid">
+                </picture>
+                <!-- Contenedor de texto para el carousel -->
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- Cualquier contenido HTML -->
+                    <div class="home-slider-card">
+                        <h2>Primera diapositiva</h2>
+                        <p>Un texto cualquiera.</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <picture><!-- Utilizamos HTML5 pra incluir una imagen -->
+                    <!-- Utilizamos una media para cargar una imagen para escritorio -->
+                    <source srcset="https://dummyimage.com/1920x1200/000/fff" media="(min-width: 1200px)" class="img-fluid">
+                    <source srcset="https://dummyimage.com/1200x800/000/fff" media="(min-width: 768px)" class="img-fluid">
+                    <!-- la imagen por defecto para movil-->
+                    <img src="https://dummyimage.com/768x480/000/fff" alt="" class="img-fluid">
+                </picture>
+              </div>
+              <div class="carousel-item">
+                <picture><!-- Utilizamos HTML5 pra incluir una imagen -->
+                    <!-- Utilizamos una media para cargar una imagen para escritorio -->
+                    <source srcset="https://dummyimage.com/1920x1200/000/fff" media="(min-width: 1200px)" class="img-fluid">
+                    <source srcset="https://dummyimage.com/1200x800/000/fff" media="(min-width: 768px)" class="img-fluid">
+                    <!-- la imagen por defecto para movil-->
+                    <img src="https://dummyimage.com/768x480/000/fff" alt="" class="img-fluid">
+                </picture>
+              </div>
+            </div>
+            <!-- Botones laterales de navegar -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#sliderHome" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#sliderHome" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <!-- Indicadores de position -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#sliderHome" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#sliderHome" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#sliderHome" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+          </div>
+
+    </section>
+    <!-- El contenedor tiene un comportamiento fijo -->
+    <div class="container">
+        <h1>Hola mundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dicta saepe ea ipsam labore laboriosam laborum magni natus quasi molestiae optio corporis assumenda tempora eveniet dolorum, alias tenetur explicabo. Eligendi!</p>
+        <div class="container">
+            <h1>Sistema responsivo básico</h1>
+            <p>Este es un ejemplo con grid de móvil y escritorio.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Columna 1</h2>
+                    <img src="https://dummyimage.com/800x600/000/fff" alt="" class="img-fluid">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, vitae iste ea dicta vero minus autem ad, in ullam sit porro ut iure beatae est ex magni pariatur assumenda quas!</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Columna 2</h2>
+                    <img src="https://dummyimage.com/800x600/000/fff" alt="" class="img-fluid">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, vitae iste ea dicta vero minus autem ad, in ullam sit porro ut iure beatae est ex magni pariatur assumenda quas!</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Columna 3</h2>
+                    <img src="https://dummyimage.com/800x600/000/fff" alt="" class="img-fluid">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, vitae iste ea dicta vero minus autem ad, in ullam sit porro ut iure beatae est ex magni pariatur assumenda quas!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-8">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, nam eveniet. Exercitationem similique amet pariatur perspiciatis ipsam, blanditiis modi! Doloribus perferendis vero error distinctio mollitia, sapiente libero cumque veritatis dolores!</p>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <img src="https://dummyimage.com/800x600/000/fff" alt="" class="img-fluid">
+                </div>
+            </div>
+    </div>
+    
+    <!-- Cargamos el JS de Boostrap. Mejor al final -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

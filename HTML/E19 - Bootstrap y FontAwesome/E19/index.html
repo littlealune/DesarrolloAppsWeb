@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <!-- Cargamos CSS de forma remota -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/my.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+        <!-- Logo -->
+          <a class="navbar-brand" href="/">Navbar</a>
+        <!-- Botón hamburguesa -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Las opciones del menú -->
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- SLIDER -->
+    <section class="home-slider">
+        <!-- Incluyo el componente carousel -->
+        <div id="sliderHome" class="carousel slide">
+            <div class="carousel-inner"><!-- Aquí van las imagenes/diapositivas-->
+              <div class="carousel-item active">
+                <!-- Imagen de fondo -->
+                <picture><!-- Utilizamos HTML5 pra incluir una imagen -->
+                    <!-- Utilizamos una media para cargar una imagen para escritorio -->
+                    <source srcset="https://dummyimage.com/1920x1200/000/fff" media="(min-width: 1200px)" class="img-fluid">
+                    <source srcset="https://dummyimage.com/1200x800/000/fff" media="(min-width: 768px)" class="img-fluid">
+                    <!-- la imagen por defecto para movil-->
+                    <img src="https://dummyimage.com/768x480/000/fff" alt="" class="img-fluid">
+                </picture>
+                <!-- Contenedor de texto para el carousel -->
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- Cualquier contenido HTML -->
+                    <div class="home-slider-card">
+                        <h2>Primera dapositiva</h2>
+                        <p>Un texto cualquiera.</p>
+                        <a href="https://google.com" target="_blank" class="btn btn-success">
+                            <i class="fa-solid fa-paper-plane fa-2x"></i> VISÍTANOS</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <picture><!-- Utilizamos HTML5 pra incluir una imagen -->
+                    <!-- Utilizamos una media para cargar una imagen para escritorio -->
+                    <source srcset="https://dummyimage.com/1920x1200/000/fff" media="(min-width: 1200px)" class="img-fluid">
+                    <source srcset="https://dummyimage.com/1200x800/000/fff" media="(min-width: 768px)" class="img-fluid">
+                    <!-- la imagen por defecto para movil-->
+                    <img src="https://dummyimage.com/768x480/000/fff" alt="" class="img-fluid">
+                </picture>
+              </div>
+              <div class="carousel-item">
+                <picture><!-- Utilizamos HTML5 pra incluir una imagen -->
+                    <!-- Utilizamos una media para cargar una imagen para escritorio -->
+                    <source srcset="https://dummyimage.com/1920x1200/000/fff" media="(min-width: 1200px)" class="img-fluid">
+                    <source srcset="https://dummyimage.com/1200x800/000/fff" media="(min-width: 768px)" class="img-fluid">
+                    <!-- la imagen por defecto para movil-->
+                    <img src="https://dummyimage.com/768x480/000/fff" alt="" class="img-fluid">
+                </picture>
+              </div>
+            </div>
+            <!-- Botones laterales de navegar -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#sliderHome" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#sliderHome" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <!-- Indicadores de position -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#sliderHome" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#sliderHome" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#sliderHome" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+          </div>
+
+    </section>
+    <!-- El contenedor tiene un comportamiento fijo -->
+    <div id="botones" class="container">
+        <h1>Hola mundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus dicta saepe ea ipsam labore laboriosam laborum magni natus quasi molestiae optio corporis assumenda tempora eveniet dolorum, alias tenetur explicabo. Eligendi!</p>
+        <div class="container">
+            <h1>Sistema responsivo básico</h1>
+            <p>Este es un ejemplo con grid de móvil y escritorio.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Columna 1</h2>
+                    <img src="https://dummyimage.com/800x600/000/fff" alt="" class="img-fluid">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, vitae iste ea dicta vero minus autem ad, in ullam sit porro ut iure beatae est ex magni pariatur assumenda quas!</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Columna 2</h2>
+                    <img src="https://dummyimage.com/800x600/000/fff" alt="" class="img-fluid">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, vitae iste ea dicta vero minus autem ad, in ullam sit porro ut iure beatae est ex magni pariatur assumenda quas!</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Columna 3</h2>
+                    <img src="https://dummyimage.com/800x600/000/fff" alt="" class="img-fluid">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, vitae iste ea dicta vero minus autem ad, in ullam sit porro ut iure beatae est ex magni pariatur assumenda quas!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-8">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, nam eveniet. Exercitationem similique amet pariatur perspiciatis ipsam, blanditiis modi! Doloribus perferendis vero error distinctio mollitia, sapiente libero cumque veritatis dolores!</p>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <img src="https://dummyimage.com/800x600/000/fff" alt="" class="img-fluid">
+                </div>
+            </div>
+    </div>
+    
+    <!-- Cargamos el JS de Boostrap. Mejor al final -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Company Transportation - Tarifas</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Página de Tarifas de Company Transportation">
+    <meta name="keywords" content="Company Transportation, tarifas, envío">
+    <meta name="author" content="Company Transportation">
+    <meta name="viewport" content="device-width=width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <!-- CABECERA -->
+    <header>
+        <img src="ficheros/logo.png" alt="Logo de Company Transportation">
+        <nav>
+            <ul>
+                <li><a href="#">HISTORIA</a></li>
+                <li><a href="#">TARIFAS</a></li>
+                <li><a href="#">SERVICIOS</a></li>
+                <li><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- PARTE PRINCIPAL -->
+    <main>
+        <h1>Tarifas</h1>
+        <p>A continuación reproducimos nuestras tarifas de envío a las distintas zonas en las que nuestra compañía puede
+            ofrecerle servicio</p>
+        <!-- LISTA -->
+        <h2>Zonas de envío</h2>
+        <ul>
+            <li><strong>Zona A:</strong> Península, Ceuta, Melilla, Islas Canarias y Baleares</li>
+            <li><strong>Zona B:</strong> Unión Europea
+                <ol>
+                    <li><strong>Zona B1:</strong> Francia, Portugal, Alemania</li>
+                    <li><strong>Zona B2:</strong> Bélgica, Gran Bretaña, Irlanda y países nórdicos</li>
+                    <li><strong>Zona B3:</strong> Resto de Europa</li>
+                </ol>
+            </li>
+            <li><strong>Zona C:</strong> África, América</li>
+            <li><strong>Zona D:</strong> Resto de continentes y masas terrestres</li>
+        </ul>
+        <!-- TABLA -->
+        <h2>Tabla de tarifas</h2>
+        <table>
+            <tr>
+                <th>Por Kgr.</th>
+                <th>ZONA A</th>
+                <th>ZONA B</th>
+                <th>ZONA C</th>
+                <th>ZONA D</th>
+            </tr>
+            <tr>
+                <th>&lt; 24h.</th>
+                <td>15 €</td>
+                <td>30 €</td>
+                <td>45 €</td>
+                <td>60 €</td>
+            </tr>
+            <tr>
+                <th>&lt; 24h.</th>
+                <td>15 €</td>
+                <td>30 €</td>
+                <td>45 €</td>
+                <td>60 €</td>
+            </tr>
+            <tr>
+                <th>48/96h.</th>
+                <td>5 €</td>
+                <td>10 €</td>
+                <td colspan="2"><strong>15 €</strong></td>
+            </tr>
+        </table>
+        <!-- FORMULARIO -->
+        <h2>Contacto</h2>
+        <form action="/contacto" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="nomApellidos" class="form-label">Nombre y apellidos:</label>
+                <input type="text" name="nombre" id="nomApellidos" class="form-control"
+                    title="Introduzca nombre y apellidos" tabindex="1" maxlength="50"
+                    placeholder="Nombre Apellido (Apellido 2)" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email:</label>
+                <input type="text" name="email" id="email" class="form-control" title="Introduzca email" tabindex="2"
+                    placeholder="correo@dominio.dominio" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje" class="form-label">Mensaje:</label>
+                <textarea name="mensaje" id="mensaje" class="form-control" title="Introduzca mensaje" tabindex="3"
+                    minlength="5" maxlength="400" placeholder="Mensaje"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="documentos" class="form-label">Subir Documentacion</label>
+                <input type="file" name="documentos" id="documentos" class="form-control">
+            </div>
+            <div class="form-group">
+                <button type="submit">ENVIAR</button>
+                <button type="reset">BORRAR</button>
+            </div>
+        </form>
+    </main>
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <nav>
+            <p><strong>Company Transportation.</strong> Polígono Maluenda. 666-999-666 Saraqusta.</p>
+            <ul>
+                <li><a href="#"><img src="ficheros/fb.png" alt="facebook"></a></li>
+                <li><a href="#"><img src="ficheros/twitter.png" alt="twitter"></a></li>
+                <li><a href="#"><img src="ficheros/google.png" alt="google"></a></li>
+                <li><a href="#"><img src="ficheros/linkedin.png" alt="linkedin"></a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

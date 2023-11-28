@@ -1,0 +1,17 @@
+div{
+    width: 25rem;
+    height: 25rem;
+    color:white;
+}
+.bg-red{
+    background-color: red;
+}
+.bg-green{
+    background-color: green;
+}
+.bg-blue{
+    background-color: blue;
+}
+.relative{
+    position: relative;
+}

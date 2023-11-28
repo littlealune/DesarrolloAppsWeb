@@ -1,0 +1,37 @@
+h1{
+    text-align: center;
+}
+
+fieldset{
+    background-color: #bf3400;
+}
+fieldset fieldset{
+    background-color: #bf6900;
+}
+form{
+    margin:auto;
+    display:block;
+    width:60rem;
+}
+fieldset button{
+    margin:auto;
+    display:block;
+    border:none;
+    color:white;
+    font-family: "Consolas", "Menlo", "Courier", monospace;
+    background-color: #1a1a1a;
+    height: 5rem;
+    width: 10rem;
+}
+#buttons{
+    background-color: rgba(0,0,0,0);
+    border:none;
+}
+#botones{
+    display: inline;
+    border:none;
+    text-decoration: underline;
+    background-color: rgba(0,0,0,0);
+    color:black;
+    width:33%;
+}

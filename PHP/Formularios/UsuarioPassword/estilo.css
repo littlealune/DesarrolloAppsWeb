@@ -1,0 +1,24 @@
+fieldset {
+    width: 40%;
+    background: khaki;
+    margin: 20%
+}
+fieldset{
+    font-size: 1.5em;
+    color:brown;
+}
+input[type=text],[type=password]{
+    margin: 5px;
+    color:blue;
+    font-size:1.3em ;
+}
+label{
+    margin: 5px;
+    color:blueviolet;
+    font-size:1.4em ;
+}
+input[type=submit]{
+    margin: 5px;
+    color:blueviolet;
+    font-size:1.4em ;
+}
